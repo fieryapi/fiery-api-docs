@@ -209,7 +209,8 @@ Retrieve Job Log Entry settings.
 
 | Name | Type | Located In | Required | Description |
 |------|------|------------|----------|-------------|
-| `id` | string | path | No | An array of selected keys. |
+| `:id` | string | path | Yes | ID of the job log entry to retrieve. |
+| `key[]` | string | query | No | An array of selected keys. |
 
 **Response Status Codes**
 
@@ -474,7 +475,9 @@ Retrieve a particular property.
 
 **Parameters**
 
-_None_
+| Name | Type | Located In | Required | Description |
+|------|------|------------|----------|-------------|
+| `:id` | string | path | Yes | ID of the property to retrieve. |
 
 **Response Status Codes**
 
@@ -518,7 +521,8 @@ Retrieve a particular papercatalog entry.
 
 | Name | Type | Located In | Required | Description |
 |------|------|------------|----------|-------------|
-| `key` | String | query | Yes | One or array of keys to fetch. |
+| `:id` | string | path | Yes | ID of the papercatalog entry to retrieve. |
+| `key` | String | query | No | One or array of keys to fetch. |
 
 **Response Status Codes**
 
